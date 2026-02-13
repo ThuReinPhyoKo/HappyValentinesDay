@@ -76,7 +76,7 @@ export default function SendKiss() {
                 
             {/* Fun Message */}
             {kissCount > 0 && (
-                <div className="text-center font-sand text-lg font-medium">
+                <div className="text-center font-sand text-base md:text-lg font-medium">
                   {kissCount < 5 && (
                     <p>Just getting started!</p>
                   )}
@@ -99,7 +99,7 @@ export default function SendKiss() {
 
             <div className="relative w-full h-full">
               {kissCount > 0 && kissCount >= 100 && (
-                  <Image className="absolute bottom-3/6 left-10 md:bottom-2/6 md:right-1/5 rounded-full object-contain" src="/png/100kiss.png" width="250" height="250" alt="cute-cartoon" />
+                  <Image className="absolute bottom-1/2 left-10 md:bottom-2/6 md:right-1/5 rounded-full object-contain" src="/png/100kiss.png" width="250" height="250" alt="cute-cartoon" />
               )}
             </div>
         </section>
