@@ -25,7 +25,7 @@ export default function PasscodeGate({children} : PropsWithChildren) {
             setIsSuccess(true);
             setTimeout(() =>{ 
                 setIsUnlocked(true);
-            }, 1000)
+            }, 2000)
         } else {
             setError(true);
         }
@@ -34,10 +34,10 @@ export default function PasscodeGate({children} : PropsWithChildren) {
     if(!isUnlocked){
         return (
             <div className="fixed inset-0 flex items-center justify-center bg-[linear-gradient(to_right,#ED4264,#FFEDBC)]">
-                <div className="p-6 rounded-xl w-[500] md:w-[600] bg-black/40">
-                    <div className="flex items-center justify-center gap-2 5">
+                <div className="p-4 rounded-xl w-[370] md:w-[600] bg-black/40">
+                    <div className="w-full flex items-center justify-center gap-1 md:gap-2.5">
                         <h2 className="font-romantic text-center text-4xl m-4 font-medium">Enter Secret Code</h2>
-                        <Image src="/svg/sparklingHeart.svg" alt="heart" width="60" height="60" preload />
+                        <Image src="/svg/sparklingHeart.svg" alt="heart" width="50" height="50" preload />
                     </div>
                     <p className="font-sand text-center font-medium text-xl my-2">What does the acronym U.T.L.B.O.F stand for?</p>
                     <p className="font-sand text-center">Type the passcode in this format without space - ThisIsAnOrangeCat</p>
