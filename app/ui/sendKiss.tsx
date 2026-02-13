@@ -98,7 +98,7 @@ export default function SendKiss() {
             )}
 
             
-              {kissCount > 0 && kissCount >= 10 && (
+              {kissCount > 0 && kissCount >= 100 && (
                   <Image className="absolute top-1/2 right-4 transform -translate-y-1/2 md:translate-y-0 md:top-1/2 md:right-80 object-contain" src="/png/100kiss.png" width="250" height="250" alt="cute-cartoon" />
               )}
             

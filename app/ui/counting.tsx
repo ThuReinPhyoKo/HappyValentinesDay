@@ -53,7 +53,7 @@ export default function CountingDate() {
         <div className="text-center font-sand mt-20 p-4">
             <h1 className="p-1 md:h-24 text-5xl md:text-7xl font-romantic font-semibold text-gradient-header mb-4">Our Love Timeline</h1>
             <p className="text-lg md:text-2xl text-black/70 font-medium mb-2 md:mb-4">We've been together for amazing ...</p>
-            <p className="mt-2 text-xl md:text-3xl font-semibold text-gradient-love mb-2 md:mb-4">{timeString}</p>
+            <p className="mt-2 p-2.5 text-xl md:text-3xl font-semibold text-gradient-love mb-2 md:mb-4">{timeString}</p>
             <p className="text-lg md:text-2xl text-black/70 font-medium">and still counting ...</p>
         </div>
   );

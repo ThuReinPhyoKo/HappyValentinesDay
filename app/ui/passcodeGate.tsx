@@ -16,7 +16,7 @@ export default function PasscodeGate({children} : PropsWithChildren) {
         inputRef.current?.focus();
     }, [])
 
-    const passcode = "h";
+    const passcode = "UntilTheLastBreathOfForever";
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault() 

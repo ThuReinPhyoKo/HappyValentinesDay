@@ -32,7 +32,7 @@ export default function Hero() {
 
       <h1 className="font-romantic font-medium text-5xl md:text-7xl lg:text-8xl text-gradient-header mb-6">Happy Valentine's Day</h1>
       <p className="font-romantic text-3xl md:text-5xl text-gradient-love mb-4">My Dearest Love</p>
-      <p className="text-lg p-4 md:text-xl text-black/60 text-center max-w-2xl mb-4 font-quicksand">
+      <p className="text-lg px-5 md:text-xl text-black/60 text-center max-w-2xl mb-4 font-quicksand">
         Every moment with you feels like magic. This little website is my way of 
         showing you how much you mean to me. Scroll down to see more surprises! 💝
       </p>
