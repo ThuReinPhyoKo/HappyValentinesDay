@@ -8,8 +8,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-romantic: var(--font-satisfy);
+  --font-sand: var(--font-quicksand);
+  --font-angry: var(--font-angry);
+  --font-time: var(--font-time);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +25,192 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* Text gradients */
+.text-gradient-header {
+  background: linear-gradient(135deg, #EB5757,#240a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-reason {
+  background: linear-gradient(135deg, #ECE9E6,#FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-love {
+  background: linear-gradient(135deg, #CB356B,#BD3F32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-time {
+  background: linear-gradient(135deg, #091E3A,#2F80ED,#2D9EE0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Floating hearts animation */
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(90vh) rotate(10deg) scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20vh) rotate(360deg) scale(0.5);
+    opacity: 0;
+  }
+}
+.animate-float-up {
+  animation: float-up 8s ease-in-out infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce-soft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-bounce-soft {
+  animation: bounce-soft 2s ease-in-out infinite;
+}
+
+/* Wiggle Animation */
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  /* ensure SVGs rotate around their center and can be transformed */
+  transform-box: fill-box;
+  transform-origin: center;
+  display: inline-block;
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+/* Flying Kiss Animation */
+@keyframes kiss-fly {
+  0% {
+    transform: scale(1) translateX(0) translateY(0);
+    opacity: 2;
+  }
+  100% {
+    transform: scale(2) translateX(100px) translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.animate-kiss-fly {
+  animation: kiss-fly 1s ease-out forwards;
+}
+
+/* Pulse Heart Animation for SendKiss */
+@keyframes pulse-heart {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-heart {
+  animation: pulse-heart 1.5s ease-in-out infinite;
+}
+
+/* Audio button animation */
+@keyframes audio-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.audio-pulse {
+  animation: audio-pulse 0.5s ease-in-out infinite;
+}
+
+/* Audio wave animation */
+@keyframes wave {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.playing-wave {
+  animation: wave 0.6s ease-in-out infinite;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 35px;
+  height: 80px;
+  position: relative;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 20px;
+  padding: 1px;
+  background:
+    conic-gradient(from -90deg at calc(100% - 3px) 3px,#7e3c26 135deg,#341612 0 270deg,#0000 0),
+    conic-gradient(from   0deg at 3px calc(100% - 3px),#0000 90deg,#341612 0 225deg,#7e3c26 0),
+    #54281f;
+  background-size: 17px 17px;
+  background-clip: content-box;
+  --c:no-repeat linear-gradient(#000 0 0);
+  -webkit-mask:
+      var(--c) 0    0, 
+      var(--c) 17px 0, 
+      var(--c) 0    17px, 
+      var(--c) 17px 17px, 
+      var(--c) 0    34px, 
+      var(--c) 17px 34px,
+      linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+          mask-composite:exclude;
+  animation: l6 3s infinite ;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 60% 0 0;
+  background: #B21B01;
+  border-top: 5px solid #c9c7c5; 
+}
+@keyframes l6 {
+ 0%,14%  {-webkit-mask-size: 0 0,0 0,0 0,0 0,0 0,0 0,auto}
+ 15%,29% {-webkit-mask-size: 17px 17px,0 0,0 0,0 0,0 0,0 0,auto}
+ 30%,44% {-webkit-mask-size: 17px 17px,17px 17px,0 0,0 0,0 0,0 0,auto}
+ 45%,59% {-webkit-mask-size: 17px 17px,17px 17px,17px 17px,0 0,0 0,0 0,auto}
+ 60%,74% {-webkit-mask-size: 17px 17px,17px 17px,17px 17px,17px 17px,0 0,0 0,auto}
+ 75%,89% {-webkit-mask-size: 17px 17px,17px 17px,17px 17px,17px 17px,17px 17px,0 0,auto}
+ 90%,
+ 100%    {-webkit-mask-size: 17px 17px,17px 17px,17px 17px,17px 17px,17px 17px,17px 17px,auto}
 }
