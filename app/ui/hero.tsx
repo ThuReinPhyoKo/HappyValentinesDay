@@ -40,11 +40,11 @@ export default function Hero() {
       {/* Button */}
       <div className="flex justify-center gap-4">
         <a 
-          href="#gallery" 
+          href="#timeline" 
           className=" border border-black/10 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300 flex items-center gap-2"
         >
           <Heart className="w-5 h-5 fill-white" />
-          See Our Moments
+          Scroll Down
         </a>
       </div>
 
