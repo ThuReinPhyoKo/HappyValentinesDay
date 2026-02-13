@@ -107,7 +107,7 @@ export default function Carousel() {
               <button
                 key={index}
                 onClick={() => scrollTo(index)}
-                className={`w-1.5 h-1.5 md:w-3 md:h-3 cursor-pointer rounded-full transition ${
+                className={`w-2 h-2 md:w-3 md:h-3 cursor-pointer rounded-full transition ${
                   index === selectedIndex ? "bg-pink-400" : "bg-gray-100 hover:bg-pink-200"
                 }`}
               />

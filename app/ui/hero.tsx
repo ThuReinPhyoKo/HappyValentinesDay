@@ -30,7 +30,7 @@ export default function Hero() {
       {/* Image & Texts */}
       <Image className="object-contain mt-5" src="/png/hero-image.png" width="200" height="200" alt="hero-image" />
 
-      <h1 className="font-romantic text-5xl md:text-7xl lg:text-8xl text-gradient-header mb-6">Happy Valentine's Day</h1>
+      <h1 className="font-romantic text-4xl md:text-7xl lg:text-8xl text-gradient-header mb-6">Happy Valentine's Day</h1>
       <p className="font-romantic text-3xl md:text-5xl text-gradient-love mb-4">My Dearest Love</p>
       <p className="text-lg md:text-xl text-black/60 text-center max-w-2xl mb-4 font-quicksand">
         Every moment with you feels like magic. This little website is my way of 

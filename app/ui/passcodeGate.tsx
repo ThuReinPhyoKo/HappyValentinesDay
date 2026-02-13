@@ -34,7 +34,7 @@ export default function PasscodeGate({children} : PropsWithChildren) {
     if(!isUnlocked){
         return (
             <div className="fixed inset-0 flex items-center justify-center bg-[linear-gradient(to_right,#ED4264,#FFEDBC)]">
-                <div className="p-6 rounded-xl w-[600] bg-black/40">
+                <div className="p-6 rounded-xl w-[500] md:w-[600] bg-black/40">
                     <div className="flex items-center justify-center gap-2 5">
                         <h2 className="font-romantic text-center text-4xl m-4 font-medium">Enter Secret Code</h2>
                         <Image src="/svg/sparklingHeart.svg" alt="heart" width="60" height="60" preload />
