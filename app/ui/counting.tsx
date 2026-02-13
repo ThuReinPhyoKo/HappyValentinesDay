@@ -50,11 +50,11 @@ export default function CountingDate() {
   }, []);
 
   return (
-        <div className="text-center font-sand mt-20">
-            <h1 className="p-1 h-24 text-4xl md:text-7xl font-romantic font-semibold text-gradient-header">Our Love Timeline</h1>
-            <p className="text-2xl text-black/70 font-medium mb-4">We've been together for amazing ...</p>
-            <p className="mt-2 text-3xl font-semibold text-gradient-love mb-4">{timeString}</p>
-            <p className="text-2xl text-black/70 font-medium">and still counting ...</p>
+        <div className="text-center font-sand mt-20 p-3">
+            <h1 className="p-1 md:h-24 text-5xl md:text-7xl font-romantic font-semibold text-gradient-header">Our Love Timeline</h1>
+            <p className="text-lg md:text-2xl text-black/70 font-medium mb-4">We've been together for amazing ...</p>
+            <p className="mt-2 text-xl md:text-3xl font-semibold text-gradient-love mb-4">{timeString}</p>
+            <p className="text-lg md:text-2xl text-black/70 font-medium">and still counting ...</p>
         </div>
   );
 }

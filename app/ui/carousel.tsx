@@ -2,7 +2,7 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import Image from "next/image";
 
 const reasons = [
@@ -91,7 +91,7 @@ export default function Carousel() {
 
       {/* Arrows, dots, and autoplay button */}
       <div className="flex items-center justify-between">
-        <div className="flex gap-4 mt-4">
+        <div className="flex gap-2 md:gap-4 mt-4">
           <button onClick={scrollPrev} className="group cursor-pointer p-2 rounded-full border hover:bg-gray-100 transition">
             <ChevronLeft className="group-hover:text-pink-600" />
           </button>
@@ -102,12 +102,12 @@ export default function Carousel() {
 
         {/* Dots */}
         <div className="flex flex-col">
-          <div className="flex justify-center gap-2 mt-4">
+          <div className="flex justify-center gap-1 md:gap-2 mt-4">
             {scrollSnaps.map((_, index) => (
               <button
                 key={index}
                 onClick={() => scrollTo(index)}
-                className={`w-3 h-3 cursor-pointer rounded-full transition ${
+                className={`w-1.5 h-1.5 md:w-3 md:h-3 cursor-pointer rounded-full transition ${
                   index === selectedIndex ? "bg-pink-400" : "bg-gray-100 hover:bg-pink-200"
                 }`}
               />
@@ -120,7 +120,11 @@ export default function Carousel() {
           onClick={toggleAutoplay}
           className="w-28 mt-4 px-4 py-2 rounded-full border border-white cursor-pointer hover:bg-gray-100 hover:text-pink-400 font-medium"
         >
-          {isPlaying ? "Pause ⏸" : "Play ▶"}
+          {isPlaying ? (
+            <span className="flex items-center justify-center gap-0.5">Pause <Pause className="w-4.5 h-4.5"/></span> 
+          ) : (
+            <span className="flex items-center justify-center gap-0.5">Play <Play className="w-4.5 h-4.5"/></span> 
+          )}
         </button>
       </div>
     </div>

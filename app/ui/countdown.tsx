@@ -65,7 +65,7 @@ export default function AnniversaryCountdown() {
   return (
     <div className="text-center font-sand mt-6 space-y-4">
       <h2 className="text-3xl md:text-5xl font-romantic text-gradient-header mb-5">
-        10-Year Anniversary Countdown
+        10th Anniversary Countdown
       </h2>
 
       <div className="flex justify-center gap-6 md:gap-16 mt-4">
