@@ -30,7 +30,7 @@ export default function SendKiss() {
   };
 
     return (
-        <section className="w-full min-h-screen p-3 flex flex-col items-center -mt-px border-0 bg-[linear-gradient(to_top,#bb377d,#dfd3dd)]">
+        <section className="w-full min-h-screen relative p-3 flex flex-col items-center -mt-px border-0 bg-[linear-gradient(to_top,#bb377d,#dfd3dd)]">
             <Image src="/png/kiss1.png" width="250" height="250" alt="kiss" />
             <h1 className="p-1 md:h-24 text-5xl md:text-7xl font-romantic font-semibold text-gradient-reason">Send Me Kisses!</h1>
             <p className="font-sand font-semibold text-lg md:text-xl text-gradient-reason mb-4">How many kisses will you send me today?</p>
@@ -97,11 +97,11 @@ export default function SendKiss() {
                 </div>
             )}
 
-            <div className="relative w-full h-full">
-              {kissCount > 0 && kissCount >= 100 && (
-                  <Image className="absolute bottom-1/2 left-10 md:bottom-2/6 md:right-1/5 rounded-full object-contain" src="/png/100kiss.png" width="250" height="250" alt="cute-cartoon" />
+            
+              {kissCount > 0 && kissCount >= 10 && (
+                  <Image className="absolute top-1/2 right-4 transform -translate-y-1/2 md:translate-y-0 md:top-1/2 md:right-80 object-contain" src="/png/100kiss.png" width="250" height="250" alt="cute-cartoon" />
               )}
-            </div>
+            
         </section>
     )
 }
