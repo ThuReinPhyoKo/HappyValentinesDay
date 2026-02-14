@@ -38,7 +38,7 @@ export default function SendKiss() {
             <div className="relative mb-4">
                 <button
                   onClick={sendKiss}
-                  className="relative cursor-pointer bg-[linear-gradient(to_right,#CB356B,#BD3F32)] w-40 h-40 rounded-full shadow-heart hover:scale-110 active:scale-95 transition-transform duration-200 flex flex-col items-center justify-center gap-2 overflow-visible"
+                  className="relative text-[#ededed] cursor-pointer bg-[linear-gradient(to_right,#CB356B,#BD3F32)] w-40 h-40 rounded-full shadow-heart hover:scale-110 active:scale-95 transition-transform duration-200 flex flex-col items-center justify-center gap-2 overflow-visible"
                 >
                   <Heart className="w-16 h-16 fill-current animate-pulse-heart" />
                   <span className="font-medium text-xl font-sand tracking-widest">Kiss!</span>
@@ -63,7 +63,7 @@ export default function SendKiss() {
             </div>
             
             {/* KissCount */}
-            <div className="rounded-2xl mb-4 flex items-center gap-2.5 shadow-lg bg-[linear-gradient(to_right,#CB356B,#BD3F32)] px-8 py-4 shadow-love">
+            <div className="rounded-2xl mb-4 flex items-center text-[#ededed] gap-2.5 shadow-lg bg-[linear-gradient(to_right,#CB356B,#BD3F32)] px-8 py-4 shadow-love">
                 <p className="font-sand text-lg font-medium">
                   You've sent
                   <span className="font-sand text-3xl mx-2">
@@ -76,7 +76,7 @@ export default function SendKiss() {
                 
             {/* Fun Message */}
             {kissCount > 0 && (
-                <div className="text-center font-sand text-base md:text-lg font-medium">
+                <div className="text-center text-[#ededed] font-sand text-base md:text-lg font-medium">
                   {kissCount < 5 && (
                     <p>Just getting started!</p>
                   )}

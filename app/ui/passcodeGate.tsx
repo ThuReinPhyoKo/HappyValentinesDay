@@ -36,11 +36,11 @@ export default function PasscodeGate({children} : PropsWithChildren) {
             <div className="fixed inset-0 flex items-center justify-center bg-[linear-gradient(to_right,#ED4264,#FFEDBC)]">
                 <div className="p-4 rounded-xl w-[370] md:w-[600] bg-black/40">
                     <div className="w-full flex items-center justify-center gap-1 md:gap-2.5">
-                        <h2 className="font-romantic text-center text-4xl m-4 font-medium">Enter Secret Code</h2>
+                        <h2 className="font-romantic text-center text-[#ededed] text-4xl m-4 font-medium">Enter Secret Code</h2>
                         <Image src="/svg/sparklingHeart.svg" alt="heart" width="50" height="50" preload />
                     </div>
-                    <p className="font-sand text-center font-medium text-xl my-2">What does the acronym U.T.L.B.O.F stand for?</p>
-                    <p className="font-sand text-center">Type the passcode in this format without space - ThisIsAnOrangeCat</p>
+                    <p className="font-sand text-center text-[#ededed] font-medium text-xl my-2">What does the acronym U.T.L.B.O.F stand for?</p>
+                    <p className="font-sand text-center text-[#ededed]">Type the passcode in this format without space - ThisIsAnOrangeCat</p>
 
                     {error && (
                         <div className="flex items-center justify-center gap-2.5">
@@ -81,7 +81,7 @@ export default function PasscodeGate({children} : PropsWithChildren) {
                         </button>
                         <button
                           type="submit"
-                          className="w-full my-4 cursor-pointer border border-white/50 bg-[linear-gradient(to_right,#D38312,#A83279)] p-2 rounded-xl text-lg font-medium flex items-center justify-center gap-2.5"
+                          className="w-full my-4 text-[#ededed] cursor-pointer border border-white/50 bg-[linear-gradient(to_right,#D38312,#A83279)] p-2 rounded-xl text-lg font-medium flex items-center justify-center gap-2.5"
                         >
                           <LockOpen className="w-5 h-5" />Unlock My Heart
                         </button>

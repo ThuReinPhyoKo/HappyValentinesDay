@@ -92,10 +92,10 @@ export default function Carousel() {
       {/* Arrows, dots, and autoplay button */}
       <div className="flex items-center justify-between">
         <div className="flex gap-2 md:gap-4 mt-4">
-          <button onClick={scrollPrev} className="group cursor-pointer p-2 rounded-full border hover:bg-gray-100 transition">
+          <button onClick={scrollPrev} className="group text-[#ededed] cursor-pointer p-2 rounded-full border hover:bg-gray-100 transition">
             <ChevronLeft className="group-hover:text-pink-600" />
           </button>
-          <button onClick={scrollNext} className="group cursor-pointer p-2 rounded-full border hover:bg-gray-100 transition">
+          <button onClick={scrollNext} className="group text-[#ededed] cursor-pointer p-2 rounded-full border hover:bg-gray-100 transition">
             <ChevronRight className="group-hover:text-pink-600" />
           </button>
         </div>
@@ -118,7 +118,7 @@ export default function Carousel() {
         {/* Autoplay Button */}
         <button
           onClick={toggleAutoplay}
-          className="w-28 mt-4 px-4 py-2 rounded-full border border-white cursor-pointer hover:bg-gray-100 hover:text-pink-400 font-medium"
+          className="w-28 mt-4 px-4 py-2 text-[#ededed] rounded-full border border-white cursor-pointer hover:bg-gray-100 hover:text-pink-400 font-medium"
         >
           {isPlaying ? (
             <span className="flex items-center justify-center gap-0.5">Pause <Pause className="w-4.5 h-4.5"/></span> 

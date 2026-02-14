@@ -81,7 +81,7 @@ export default function AnniversaryCountdown() {
 function TimeBox({ label, value }: { label: string; value: number }) {
   return (
     <div className="flex flex-col items-center gap-2.5 font-sand">
-      <span className="text-4xl md:text-5xl text-gradient-time font-time font-semibold text-black">
+      <span className="text-4xl md:text-5xl text-gradient-time font-time font-bold text-black">
         {value}
       </span>
       <span className="text-base md:text-lg text-black font-semibold">{label}</span>
